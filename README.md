@@ -53,7 +53,7 @@ XLSR leverages an efficient design composed of:
 ## Dataset
 XLSR supports the following datasets:
 - **DIV2K** - A high-quality image super-resolution dataset.
-
+- Place the dataset into the `dataset` directory, with training images stored in the `DIV2K_train_HR` directory and validation images in the `DIV2K_valid_HR` directory.
 ---
 
 ## Training
