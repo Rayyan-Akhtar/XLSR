@@ -3,6 +3,7 @@ from data.dataloader import Div2kDataloader
 from lightning import Trainer
 from lightning import Callback
 import numpy as np
+from utils import current_dir
 import os
 
 
@@ -35,7 +36,7 @@ trainer = Trainer(
     max_epochs=5000,
     enable_progress_bar=True,
     enable_model_summary=True,
-    default_root_dir="/teamspace/studios/this_studio/XLSR",
+    default_root_dir=current_dir,
     log_every_n_steps=1,
     callbacks=[lr_callback]
 )
